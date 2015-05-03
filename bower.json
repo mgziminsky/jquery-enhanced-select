@@ -1,0 +1,32 @@
+{
+  "name": "jquery-enhanced-select",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mgziminsky/jquery-enhanced-select",
+  "authors": [
+    "Michael Ziminsky <mgziminsky@gmail.com>"
+  ],
+  "description": "Improved dropdown input that supports filtering, a 'Select All' option, and uses checkboxes. Heavily influenced by, and originally forked from, multiple-select by 'Zhixin Wen'",
+  "main": "jquery.enhanced.select.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "select",
+    "dropdown",
+    "multiselect",
+    "input",
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests",
+    "node_modules"
+  ],
+  "dependencies": {
+    "jquery-ui": ">=1.8.0"
+  }
+}
