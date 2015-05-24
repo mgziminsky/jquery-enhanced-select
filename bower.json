@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://github.com/mgziminsky/jquery-enhanced-select",
   "authors": [
-    "Michael Ziminsky <mgziminsky@gmail.com>"
+    "Michael Ziminsky <mgziminsky@users.noreply.github.com>"
   ],
   "description": "Improved dropdown input that supports filtering, a 'Select All' option, and uses checkboxes. Heavily influenced by, and originally forked from, multiple-select by 'Zhixin Wen'",
   "main": "jquery.enhanced.select.js",
