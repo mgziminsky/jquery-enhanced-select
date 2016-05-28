@@ -453,7 +453,7 @@
                 this.$disabledItems.parent().hide();
                 this.$enabledItems.each(function() {
                     var $parent = $(this).parent();
-                    $parent[$parent.text().toLowerCase().indexOf(searchVal) < 0 ? 'hide' : 'show']();
+                    $parent[$parent.text().toLowerCase().indexOf(searchVal.toLowerCase()) < 0 ? 'hide' : 'show']();
                 });
 
                 this.$selectGroups.each(function() {
