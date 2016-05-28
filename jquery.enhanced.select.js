@@ -1,6 +1,6 @@
 /**
  * @author Michael Ziminsky <mgziminsky@gmail.com>
- * @version 0.1.0
+ * @version 0.1.1
  * @license MIT
  * @source https://github.com/mgziminsky/jquery-enhanced-select
  *
@@ -18,7 +18,7 @@
     'use strict';
 
     $.widget('mz.enhancedSelect', {
-        version: '0.1.0',
+        version: '0.1.1',
         options: {
             keepOpen: false,
             placeholder: null,
