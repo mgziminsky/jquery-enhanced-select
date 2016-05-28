@@ -246,13 +246,8 @@
             }
             var checked = items.filter(':checked');
 
-            if (items.length === 0) {
-                return;
-            } else if (items.length === checked.length) {
-                this.$selectAll.prop('checked', true);
-                $('.es-group', this.$selectGroups).prop('checked', true);
-            } else if (this.$selectGroups.length) {
-                this.$selectAll.prop('checked', false);
+            this.$selectAll.prop('checked', items.length === checked.length);
+            if (this.$selectGroups.length) {
                 this.$selectGroups.filter(':visible').each(function() {
                     var grp = '[data-group=' + $(this).text() + ']';
                     $('.es-group', this).prop('checked', items.filter(grp).length === checked.filter(grp).length);
