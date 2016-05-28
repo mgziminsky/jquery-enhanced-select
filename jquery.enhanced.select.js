@@ -39,6 +39,7 @@
             maxHeight: 250,
             container: undefined,
             position: 'bottom',
+            searchDelay: 350,
 
             styler: function(value) {
                 return false;
@@ -131,6 +132,7 @@
                 }
             });
 
+            var searchTimer;
             this._on(this.$searchInput, {
                 keydown: function(e) {
                     if (e.keyCode === 9 && e.shiftKey) { // Ensure shift-tab causes lost focus from filter as with clicking away
@@ -138,7 +140,8 @@
                     }
                 },
                 keyup: function(e) {
-                    this.filter(this.$searchInput.val().trim());
+                    if (searchTimer) clearTimeout(searchTimer);
+                    searchTimer = setTimeout(function() { this.filter(this.$searchInput.val().trim()); }, this.options.searchDelay);
                 }
             });
         },
@@ -334,11 +337,9 @@
             this.$opts.append(this.$noResults);
             this.$opts.css('max-height', this.options.maxHeight + 'px');
 
-            this.submitAllValue = false;
             if (this.options.selectAll && this.options.multiple) {
                 if (this.options.selectAllValue !== undefined) {
                     this.$selectAll.attr('value', this.options.selectAllValue).attr('name', this.element.attr('name'));
-                    this.submitAllValue = true;
                 } else {
                     this.$selectAll.removeAttr('value').removeAttr('name');
                 }
