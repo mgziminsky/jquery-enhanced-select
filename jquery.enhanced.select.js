@@ -2,8 +2,9 @@
  * @author Michael Ziminsky <mgziminsky@gmail.com>
  * @version 0.1.0
  * @license MIT
+ * @source https://github.com/mgziminsky/jquery-enhanced-select
  *
- * Based on multiple-select plugin by Zhixin Wen <wenzhixin2010@gmail.com>
+ * Based on multiple-select plugin by Zhixin Wen v1.1.0
  * http://wenzhixin.net.cn/p/multiple-select/
  *
  * Uses much of the original code as a base, with some fundamental changes:
